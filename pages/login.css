@@ -1,0 +1,135 @@
+
+.logIn_container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:4rem;
+    text-align: center;   
+    flex-direction: row;
+    
+}
+.logIn_card{
+    width:25rem;
+    /* height: auto; */
+    padding:2rem;
+    border : 1px solid #ccc
+        
+    }
+.bottom-card{
+        width: auto;
+        margin-top: 8px;
+        height: fit-content;
+    } 
+.or{
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 17px;
+    font-weight: 600;
+}
+.loginbtn:hover{
+background-color: blue;
+}
+.downloadscard{
+    margin-top: 1rem;   
+}
+.getapptxt{
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+.psimg{
+    margin-right: 8px;
+}
+.footer{
+    background-color: rgba(var(--b3f,250,250,250),1);
+    padding-left: 16px;
+    padding-right: 16px;
+    order: 5;
+    padding: 0 20px;
+    margin-top: 9rem;
+}
+
+.ftrp1{
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    vertical-align: baseline;
+    font: sans-serif;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 auto;
+    margin-top: 5rem;
+    padding-top: 10px;
+}
+.ftrp1-ext{
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    vertical-align: baseline;
+    font: sans-serif;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 auto;
+    
+}
+.ftrbtn{
+   margin-right: 10px;
+   color: #8e8e8e;
+   margin-left:4px;
+   text-transform: none;
+   
+}
+.ftrbtn1{
+    
+    color: #8e8e8e;
+    text-transform: none;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.ftrp2{
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    vertical-align: baseline;
+    font: sans-serif;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 auto;
+    font-size: smaller;
+    color: #8e8e8e;
+}
+@media only screen and (max-width:500px){
+    .logIn_card{
+        width:100%;
+    }
+    .bottom-card{
+        width: 100%;
+    }
+}
+.carbkgd{
+    background: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
+    background-size: cover;
+    height: 590px;
+    width: 453px;  
+    padding-left: 92px;
+    padding-top: 26px;
+    position: relative;
+ }
+ .swpimg{
+     height: 528px;
+     width: 246px;
+     position: relative;
+     
+
+     
+ }
+  
+
+    
+
+
+

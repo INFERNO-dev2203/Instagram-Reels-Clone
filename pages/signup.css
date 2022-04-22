@@ -1,0 +1,116 @@
+
+.signUp_container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:4rem;
+    text-align: center;   
+    flex-direction: column;
+    
+}
+.signUp_card{
+    width:25rem;
+    /* height: auto; */
+    padding:2rem;
+    border : 1px solid #ccc
+        
+    }
+.bottom-card{
+        width: auto;
+        margin-top: 8px;
+        height: fit-content;
+    }
+    
+.heading{ 
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0 40px 10px;
+    text-align: center; 
+} 
+
+ .bottomtext{
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px 40px;
+    text-align: center;
+} 
+.or{
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 17px;
+    font-weight: 600;
+}
+.signupbtn:hover{
+background-color: blue;
+}
+.downloadscard{
+    margin-top: 1rem;   
+}
+.getapptxt{
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+.psimg{
+    margin-right: 8px;
+}
+.footer{
+    background-color: rgba(var(--b3f,250,250,250),1);
+    padding-left: 16px;
+    padding-right: 16px;
+    order: 5;
+    padding: 0 20px;
+}
+.ftrp1{
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    vertical-align: baseline;
+    font: sans-serif;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 auto;
+    
+    margin-top: 5rem;
+    padding-top: 10px;
+}
+.ftrbtn{
+   margin-right: 10px;
+   color: #8e8e8e;
+   margin-left:4px;
+   text-transform: none;
+   
+}
+.ftrbtn1{
+    
+    color: #8e8e8e;
+    text-transform: none;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.ftrp2{
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    vertical-align: baseline;
+    font: sans-serif;
+    align-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex: 0 0 auto;
+    font-size: smaller;
+    color: #8e8e8e;
+}
+   
+
+
+
+    
+
+
+
