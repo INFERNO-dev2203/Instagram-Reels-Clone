@@ -1,3 +1,87 @@
 .feed_container{
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+.nav-icons{
+    margin: 0.5rem;
+    color: black;
+}
+.nav-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+@media only screen and(max-width:300px){
+    .nav-icons{
+        display:none;
+    }
+}
+.uploadbtn{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.pgsbar{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video-container{
+    width: 27rem;
+    height: 80vh;
+    border-radius: 20px;
+    margin-top: 30px;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+.video-container::-webkit-scrollbar{
+    display: none;
+}
+.post-container{
+    width: 27rem;
+    height: 80vh;
+    margin-bottom: 0.7rem;
+    border-radius: 20px; 
+    position: relative; 
+}
+.post-container > video{
+    width: 27rem;
+    height: 80vh; 
+    background-color: skyblue;
+    border-radius: 19px;
+    object-fit: contain;
+}
+.ftrfd{
+    position: absolute;
+    bottom: 4rem;   
+    display: flex;
+    flex-direction: row
+}
+.ftrfdr1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.ftrfdr2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:16rem;
 }

@@ -13,6 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from "next/image";
 import insta from "../pages/instalogo.jpg"
+import HomeIcon from '@mui/icons-material/Home'
+import ExploreIcon from '@mui/icons-material/Explore'
 
 
 const settings = ['Profile', 'Logout'];
@@ -37,17 +39,16 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-            <Image sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }} src={insta}/>
-          
-
-         
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}/>
-          <Box sx={{ flexGrow: 0 }}>
+  <AppBar position="static" className="navbar">
+    <Container maxWidth="xl">
+      <Toolbar disableGutters>
+        <Image sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }} src={insta}/>
+         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}/>
+          <Box sx={{ flexGrow: 0 }} className="nav-icons-container">
+           <HomeIcon fontSize="large" className="nav-icons" />
+           <ExploreIcon fontSize="large" className="nav-icons"/>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, marginLeft:"10px" }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
