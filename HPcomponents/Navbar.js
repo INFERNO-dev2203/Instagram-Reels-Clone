@@ -15,11 +15,16 @@ import Image from "next/image";
 import insta from "../pages/instalogo.jpg"
 import HomeIcon from '@mui/icons-material/Home'
 import ExploreIcon from '@mui/icons-material/Explore'
-
+import { AuthContext } from "../context/auth";
+import {useRouter} from "next/router";
 
 const settings = ['Profile', 'Logout'];
 
 const ResponsiveAppBar = () => {
+
+  const{logout} = React.useContext(AuthContext)
+  const{toprofile} = React.useContext(AuthContext)
+  const router = useRouter()
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -37,6 +42,13 @@ const ResponsiveAppBar = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const handleLogout = async() => {
+        await logout();
+        router.push('/login')
+  }
+
+  
 
   return (
   <AppBar position="static" className="navbar">
@@ -67,12 +79,25 @@ const ResponsiveAppBar = () => {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+            ><MenuItem onClick={() =>
+              {
+                  
+                  
+                  handleCloseUserMenu()
+              }}>
+                  <Typography textAlign="center">
+                  Profile
+                  </Typography>
                 </MenuItem>
-              ))}
+              <MenuItem onClick={() =>
+              {
+                  handleLogout()
+                  handleCloseUserMenu()
+              }}>
+                  <Typography textAlign="center">
+                  Logout
+                  </Typography>
+                </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

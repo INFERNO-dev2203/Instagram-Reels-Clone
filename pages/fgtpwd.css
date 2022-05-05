@@ -1,5 +1,4 @@
-
-.signUp_container{
+.fgtpwd_container{
     display:flex;
     justify-content:center;
     align-items: center;
@@ -7,60 +6,28 @@
     text-align: center;   
     flex-direction: column;
     
-}
-.signUp_card{
-    width:25rem;
-    /* height: auto; */
-    padding:2rem;
-    border : 1px solid #ccc     
-    }
-    .signupbtn.hover{
-       background-color: blue;
-    }
-.bottom-card{
-        width: auto;
-        margin-top: 8px;
-        height: fit-content;
-    }
     
-.heading{ 
+}
+.fgtpwd_card{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width:25rem;
+    height: auto;
+    padding:2rem;
+    border: 1px solid black;
+}
+.fgtpwdheading{
     color: rgba(var(--f52,142,142,142),1);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin: 0 40px 10px;
+    margin: 20px 10px 20px;
     text-align: center; 
-} 
 
- .bottomtext{
-    color: rgba(var(--f52,142,142,142),1);
-    font-size: 12px;
-    line-height: 16px;
-    margin: 10px 40px;
-    text-align: center;
-} 
-.or{
-    color: rgba(var(--f52,142,142,142),1);
-    font-size: 17px;
-    font-weight: 600;
 }
-.signupbtn:hover{
-background-color: blue;
-}
-.downloadscard{
-    margin-top: 1rem;   
-}
-.getapptxt{
-    color: rgba(var(--i1d,38,38,38),1);
-    font-size: 14px;
-    line-height: 18px;
-    margin: 10px 20px 10px 20px;
-    text-align: center;
-}
-.psimg{
-    margin-right: 8px;
-}
-.footers{
+.footerfgt{
     background-color: rgba(var(--b3f,250,250,250),1);
     padding-left: 16px;
     padding-right: 16px;
@@ -70,7 +37,7 @@ background-color: blue;
     display: flex;
     flex-direction: column;
 }
-.ftrp1s{
+.ftrp1fgt{
     display: flex;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     vertical-align: baseline;
@@ -80,23 +47,23 @@ background-color: blue;
     flex-direction: row;
     justify-content: center;
     flex: 0 0 auto;
-    margin-top: 5rem;
+    margin-top: 19rem;
     padding-top: 10px;
     color: #8e8e8e;
 }
-.ftrbtns{
+.ftrbtnfgt{
    margin-right: 10px;
    color: #8e8e8e;
    text-transform: none;
    margin-left:4px;
 }
-.ftrbtn1s{
+.ftrbtn1fgt{
     color: #8e8e8e;
     text-transform: none;
     padding-left: 0%;
     padding-right: 0%;
 }
-.ftrp2s{
+.ftrp2fgt{
     display: flex;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     vertical-align: baseline;
@@ -110,10 +77,4 @@ background-color: blue;
     color: #8e8e8e;
 }
    
-
-
-
-    
-
-
 

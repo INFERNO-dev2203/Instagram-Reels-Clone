@@ -1,0 +1,34 @@
+.profile-upper{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.namepost-container{
+    flex-direction: column;
+    display: flex;
+}
+.profile-videos{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+.profile-videos > video{
+    width: 10rem;
+    height: 20rem;
+    padding: 0.5rem;
+}
+@media only screen and (max-width:500px) {
+    .profile-upper{
+        flex-direction: column;
+    }
+    
+}

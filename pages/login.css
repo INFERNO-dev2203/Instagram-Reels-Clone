@@ -41,16 +41,18 @@ background-color: blue;
 .psimg{
     margin-right: 8px;
 }
-.footer{
+.footerl{
     background-color: rgba(var(--b3f,250,250,250),1);
     padding-left: 16px;
     padding-right: 16px;
     order: 5;
     padding: 0 20px;
-    margin-top: 9rem;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.ftrp1{
+.ftrp1l{
     display: flex;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     vertical-align: baseline;
@@ -61,7 +63,7 @@ background-color: blue;
     justify-content: center;
     flex: 0 0 auto;
     margin-top: 5rem;
-    padding-top: 10px;
+    padding:0%;
 }
 .ftrp1-ext{
     display: flex;
@@ -75,21 +77,16 @@ background-color: blue;
     flex: 0 0 auto;
     
 }
-.ftrbtn{
+.ftrbtnl{
    margin-right: 10px;
-   color: #8e8e8e;
    margin-left:4px;
-   text-transform: none;
-   
+  
 }
-.ftrbtn1{
-    
-    color: #8e8e8e;
-    text-transform: none;
+.ftrbtn1l{
     padding-left: 0%;
     padding-right: 0%;
 }
-.ftrp2{
+.ftrp2l{
     display: flex;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     vertical-align: baseline;
@@ -100,7 +97,6 @@ background-color: blue;
     justify-content: center;
     flex: 0 0 auto;
     font-size: smaller;
-    color: #8e8e8e;
 }
 @media only screen and (max-width:500px){
     .logIn_card{
@@ -122,10 +118,7 @@ background-color: blue;
  .swpimg{
      height: 528px;
      width: 246px;
-     position: relative;
-     
-
-     
+     position: relative;  
  }
   
 
