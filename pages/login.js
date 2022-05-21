@@ -51,6 +51,15 @@ useEffect(() => {
   }
 },[user])
 
+function tosignup() {
+  router.push("/signup")
+  return null
+}
+function tofgtpwd() {
+  router.push("/fgtpwd")
+  return null
+}
+
 
     return(
  
@@ -70,8 +79,8 @@ useEffect(() => {
               { error != '' &&
                 <div style={{color :"red",marginTop :"0.5 rem"}}>{error}</div>
               }
-               <Button className="loginbtn" variant="contined" color="blue" fullWidth component="span" style={{marginTop: '1rem'}} onClick = {handleClick} disabled={loading}>Log In</Button>
-               <div style={{color : "blue", marginTop:"0.5rem"}}>Forgot Password?</div>
+               <Button className="loginbtn" variant="contined" color="blue" fullWidth component="span" style={{marginTop: '1rem',backgroundColor:"blue",color:"white"}} onClick = {handleClick} disabled={loading}>Log In</Button>
+               <div onClick={tofgtpwd} style={{color : "blue", marginTop:"0.5rem"}}>Forgot Password?</div>
                <h4 className="or" align ="center">━━━━━━━ &nbsp; OR &nbsp; ━━━━━━━</h4>
                <Button variant ='contained' fullWidth component = "span" marginbottom ="1rem">Log in with Facebook</Button>             
             <div className="bottom-card">
@@ -80,7 +89,7 @@ useEffect(() => {
                     <Typography><span>Don&apos;t have an account?</span></Typography>
                     </CardContent>
                     <CardActions>
-                    <Button size="small" fullWidth>Sign up</Button>
+                    <Button size="small" fullWidth onClick={tosignup}>Sign up</Button>
                     </CardActions>
                     </Card>
             <div className="downloadscard">
@@ -101,18 +110,18 @@ useEffect(() => {
             <a href="https://help.instagram.com/"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Help</Button></a>
             <a href="https://developers.facebook.com/docs/instagram"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>API</Button></a> 
             <a href="https://help.instagram.com/519522125107875/?maybe_redirect_pol=0"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Privacy</Button></a>
-            <a href="https://help.instagram.com/581066165581870"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Terms</Button></a>
-            <a href="https://www.instagram.com/directory/profiles/"><Button className="ftrbtn" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Top Accounts</Button></a>
-            <a href="https://www.instagram.com/directory/hashtags/"><Button className="ftrbtn" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Hashtags</Button></a>
-            <a href="https://www.instagram.com/explore/locations/"><Button className="ftrbtn" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Locations</Button></a>
-            <a href="https://www.instagram.com/web/lite/"><Button className="ftrbtn" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Instagram Lite</Button></a>
+            <a href="https://help.instagram.com/581066165581870"><Button className="ftrbtn1" size="small" variant="text" sx={{marginRight:'1vw', color:"#8e8e8e", textTransform:'none'}}>Terms</Button></a>
+            <a href="https://www.instagram.com/directory/profiles/"><Button className="ftrbtn" size="small" variant="text" sx={{marginRight:'1vw', color:"#8e8e8e", textTransform:'none'}}>Top Accounts</Button></a>
+            <a href="https://www.instagram.com/directory/hashtags/"><Button className="ftrbtn" size="small" variant="text" sx={{marginRight:'1vw', color:"#8e8e8e", textTransform:'none'}}>Hashtags</Button></a>
+            <a href="https://www.instagram.com/explore/locations/"><Button className="ftrbtn" size="small" variant="text" sx={{marginRight:'1vw', color:"#8e8e8e", textTransform:'none'}}>Locations</Button></a>
+            <a href="https://www.instagram.com/web/lite/"><Button className="ftrbtn" size="small" variant="text" sx={{marginRight:'1vw', color:"#8e8e8e", textTransform:'none'}}>Instagram Lite</Button></a>
           </div>
           <div className="ftrp1-ext">
-            <a href="https://www.instagram.com/topics/dance-and-performance/"><Button className="ftrbtn1" size="small" variant="text">Dance</Button></a>
-            <a href="https://www.instagram.com/topics/food-and-drink/"><Button className="ftrbtn1" size="small" variant="text">Food & Drink</Button></a>
-            <a href="https://www.instagram.com/topics/home-and-garden/"><Button className="ftrbtn1" size="small" variant="text">&nbsp;&nbsp;Home & Garden</Button></a>
-            <a href="https://www.instagram.com/topics/music/"><Button className="ftrbtn" size="small" variant="text">Music</Button></a>
-            <a href="https://www.instagram.com/topics/visual-arts/"><Button className="ftrbtn1" size="small" variant="text">Visual Arts</Button></a>
+            <a href="https://www.instagram.com/topics/dance-and-performance/"><Button className="ftrbtn1" size="small" variant="text" sx={{ color:"#8e8e8e", textTransform:'none'}}>Dance</Button></a>
+            <a href="https://www.instagram.com/topics/food-and-drink/"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Food & Drink</Button></a>
+            <a href="https://www.instagram.com/topics/home-and-garden/"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>&nbsp;&nbsp;Home & Garden</Button></a>
+            <a href="https://www.instagram.com/topics/music/"><Button className="ftrbtn" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Music</Button></a>
+            <a href="https://www.instagram.com/topics/visual-arts/"><Button className="ftrbtn1" size="small" variant="text" sx={{color:"#8e8e8e", textTransform:'none'}}>Visual Arts</Button></a>
           </div>
           <div className="ftrp2s">
             <p>English &nbsp; © 2022 Instagram from Meta</p>

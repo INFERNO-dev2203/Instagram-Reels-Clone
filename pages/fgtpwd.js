@@ -37,6 +37,11 @@ useEffect(() => {
     console.log('Not Logged In')
   }
 },[user])
+
+function tosignup() {
+  router.push("/signup")
+  return null
+}
     return(
 
 <><div className="body">
@@ -45,9 +50,9 @@ useEffect(() => {
                     <Image src={instalogo} /> 
                     <h2 className="fgtpwdheading">Enter your email, phone, or username and we'll send you a link to get back into your account.</h2>
                     <TextField id="outlined-basic1" size="small" margin="dense" fullWidth label="Mobile Number or Email" variant="outlined" value={email} onChange={(e) => setEmail(e.target.value)} />
-                    <Button className="sendLoginLink" variant="contined" color="blue" fullWidth component="span" style={{marginTop: '1rem'}} onClick={handleClick}>Send Login Link</Button>
+                    <Button className="sendLoginLink" variant="contined" color="blue" fullWidth component="span" style={{marginTop: '1rem',color:"white",backgroundColor:"blue"}} onClick={handleClick}>Send Login Link</Button>
                     <h4 className="or" align ="center">━━━━━━━ &nbsp; OR &nbsp; ━━━━━━━</h4>
-                    <Button className="signupbtn" variant="contined" color="blue" fullWidth component="span" style={{marginTop: '1rem'}} onClick={handleClick}>Sign up</Button>
+                    <Button className="signupbtn" variant="contined" fullWidth component="span" style={{marginTop: '1rem',color:"white",backgroundColor:"blue"}} onClick={tosignup}>Sign up</Button>
             </div>
         </div>
         </div>

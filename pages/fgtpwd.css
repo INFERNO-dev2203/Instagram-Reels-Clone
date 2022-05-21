@@ -16,7 +16,7 @@
     width:25rem;
     height: auto;
     padding:2rem;
-    border: 1px solid black;
+    border: 0.5px solid lightgrey;
 }
 .fgtpwdheading{
     color: rgba(var(--f52,142,142,142),1);

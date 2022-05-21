@@ -20,7 +20,7 @@ import {useRouter} from "next/router";
 
 const settings = ['Profile', 'Logout'];
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = ({userData}) => {
 
   const{logout} = React.useContext(AuthContext)
   const{toprofile} = React.useContext(AuthContext)
@@ -44,9 +44,13 @@ const ResponsiveAppBar = () => {
   };
 
   const handleLogout = async() => {
-        await logout();
+      await logout();
         router.push('/login')
   }
+  const handleProfile = async() => {
+    router.push('/profile')
+}
+
 
   
 
@@ -81,8 +85,7 @@ const ResponsiveAppBar = () => {
               onClose={handleCloseUserMenu}
             ><MenuItem onClick={() =>
               {
-                  
-                  
+                  handleProfile()
                   handleCloseUserMenu()
               }}>
                   <Typography textAlign="center">

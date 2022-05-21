@@ -47,6 +47,7 @@ const store = {
     forgot,
     signup,
     
+    
 }   
 
  return(

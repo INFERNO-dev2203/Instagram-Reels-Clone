@@ -44,9 +44,6 @@
     font-size: 17px;
     font-weight: 600;
 }
-.signupbtn:hover{
-background-color: blue;
-}
 .downloadscard{
     margin-top: 1rem;   
 }
@@ -109,8 +106,30 @@ background-color: blue;
     font-size: smaller;
     color: #8e8e8e;
 }
-   
+@media only screen and (max-width:600px){
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 50vw;
+}
+.signUp_container{
+    margin-left: 25vw;
+}
 
+.signUp_card{
+    width:25rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+.footers{
+    margin-top: 50vh;
+}
+}
 
 
     

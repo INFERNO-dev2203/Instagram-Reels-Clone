@@ -98,9 +98,25 @@ background-color: blue;
     flex: 0 0 auto;
     font-size: smaller;
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 20vw;
+    }
+    
     .logIn_card{
-        width:100%;
+        width:25rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .carbkgd{
+        display: none;
     }
     .bottom-card{
         width: 100%;
